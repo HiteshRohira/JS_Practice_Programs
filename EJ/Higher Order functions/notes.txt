@@ -1,0 +1,79 @@
+
+> A function like console.log or sum can also be passed to a funtion as functions are basically just VALUES.
+
+_______________________________________________________________
+
+
+> function greaterThan(n) {
+	return m => m > n;
+   }
+   let greaterThan10 = greaterThan(10);
+   console.log(greaterThan10(11));
+   // → true
+
+
+Here greaterThan10 is a function that is getting created by the second last line.
+
+It is basically like such 	greaterThan10(m) { return m>10; }
+
+where 10 is the value of n stored in the function.
+
+_________________________________________________________________________
+
+
+> array.forEach() -- takes a function as an argument and performs that function on each element of the array it has been applied to. For example, [1, 2, 3].forEach(l => console.log(l)); gives output like --
+
+1
+2
+3
+
+___________________________________________________________________
+
+
+> array.filter() -- filters an array and removes elements that do not pass a test
+
+> array.map() -- map applies a function to all elements of an array and returns a new array
+
+
+________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
