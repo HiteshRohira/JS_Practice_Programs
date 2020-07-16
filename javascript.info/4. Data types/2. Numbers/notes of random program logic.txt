@@ -1,0 +1,17 @@
+Math.random() gives us x such that 0 <= x < 1 .... (1)
+
+if min = 1 and max = 5 then x should be a value such that 1 <= x < 5
+
+that can be done by first multiplying 4 (max - min, 5 - 1 in this case) on both sides of equation (1) and adding the min value (in this case 1)
+
+0 <= x < 1
+0 <= 4x < 4 (Multiplying by 4)
+1 <= (4x + 1) < 5 (Adding 1)
+
+Hence the value we have to return in this case is (4x + 1) where x is a random value returned by Math.random()
+
+This works for any min and max value
+
+if min = 2 and max = 10 then value to be returned will be
+
+x * (max - min) + min

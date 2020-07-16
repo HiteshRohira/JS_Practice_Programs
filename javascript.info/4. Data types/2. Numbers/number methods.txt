@@ -1,0 +1,62 @@
+
+num.toString() -- converts a number to string
+
+Math.floor() -- rounds down to nearest integer
+
+Math.ceil() -- rounds up to nearest integer
+
+Math.round() -- rounds to the nearest integer
+
+Math.trunc() -- removes the decimal part
+
+Math.toFixed(2) -- rounds to a given decimal places, in this 	case 2. [RETURNS A STRING]
+
+isNaN(num) -- checks if the number is NaN
+
+isFinite(num) -- checks if the number is not Infinity/ -Infinity/ NaN
+
+parseInt(str) -- reads a string for numerical values and returns int
+
+parseInt(str) -- reads a string for numerical values and returns float
+
+Math.random() -- returns random number between 0 to 1
+
+Math.max()/ Math.min() -- returns max/ min values
+
+Math.pow(n, x) -- returns n to the power x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
