@@ -1,0 +1,60 @@
+str.toLowerCase() -- changes the string to lower case
+
+str.toUpperCase() -- changes the string to upper case
+
+str.indexOf(substr, pos) -- searches for substr in str starting from position pos'
+
+str.includes(substr, pos) -- returns true or false depending on whether substr is in str or not, from position pos which is an optional argument
+
+str.startsWith(substr) -- returns true if str starts with substr
+
+str.endsWith(substr) -- returns true if str end with substr
+
+str.slice(start, end) -- returns part of string from index position 'start' to index position 'end' (but not including charachter at 'end'
+
+str.substring(start, end) -- returns part of string BETWEEN START AND END
+
+str.substr(start, length) -- returns part of string from start that has the specified length
+
+str.codePointAt(pos) -- gives charachter code for charachter in string at pos
+
+String.fromCodePoint(code) -- gives charachter for the specified code
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
