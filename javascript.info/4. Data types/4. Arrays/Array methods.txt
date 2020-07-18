@@ -1,0 +1,11 @@
+arr.pop() -- removes the last element of an array and returns it
+
+arr.push() -- adds an element to the end of an array
+
+arr.shift() -- removes the first element of an array and returns it
+
+arr.unshift() -- adds an element to the beginning of the array
+
+for...of loop to iterate over an array
+
+arr.toString() -- converts array to a string with its values seperated by commas
