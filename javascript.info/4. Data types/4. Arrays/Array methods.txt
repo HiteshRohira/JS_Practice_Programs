@@ -9,3 +9,71 @@ arr.unshift() -- adds an element to the beginning of the array
 for...of loop to iterate over an array
 
 arr.toString() -- converts array to a string with its values seperated by commas
+
+arr.splice(index, deleteCount, elem1, elem2, ...elemN) -- can do a lot of things. index is where the magic begins, deleteCount is the amount of array elements that have to be deleted (the first one being arr[index]), elem1 - elemN are the elements that have to be placed in the position of the deleted elements
+--it returns an array containing the removed elements
+--deleteCount set as 0 allows us to simply replace elements, with the first new element at arr[index]
+--negative indexes
+
+
+arr.slice(start, end) -- returns a subarray from arr[start] to (but not including) arr[end]. It doesn't effect the original array
+
+arr.concat(arg1, arg2...) -- adds arguments to the array or if the argument is an array, it combines and returns  single array with all values of both the arrays
+
+
+arr.forEach(function) -- this iterates over each element of an array and applies the function to each element of the array
+
+arr.indexOf(item, from) -- searches for the item in an array from the index (0 if not provided) and returns the index of the first appearence of the item or -1 if item doesn't exist
+
+arr.lastIndexOf(item, from) -- same as arr.indexOf but looks from right to left
+
+arr.includes(item, from) -- returns true if item is found, from the given index.
+
+arr.find(fn) -- returns the element for which the function returns true
+
+arr.findIndex(fn) -- returns the index of the element for which the function returns true
+
+arr.filter(fn) -- returns a subarray containing all the elements for which the function returns true
+
+arr.map(fn) -- returns an array of results formed after passing each element to the function
+
+arr.sort() -- sorts array elements, BY TREATING THEM AS STRINGS
+
+arr.sort( (a, b) => a - b ); -- quickly sorts numbers in ascending order
+
+arr.reverse() -- reverses the array
+
+str.split(dlm) -- this splits a string into individual array elements using the delimiter as a seperator of strings into smaller substrings (which then forms the array elements) [IF THE DELIMITER IS AN EMPTY STRING THEN THE STRING WILL BE SPLIT INTO INDIVIDUAL CHARACHTERS]
+
+arr.join(glue) -- joins array elements into a single string and glue is a parameter that holds them together ;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
