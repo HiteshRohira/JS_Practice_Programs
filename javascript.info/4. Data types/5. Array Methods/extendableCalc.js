@@ -1,10 +1,15 @@
-function Calculator(str) {
+function Calculator() {
+  this.operations = {
+    "+": (a, b) => a + b,
+    "-": (a, b) => a - b,
+  };
+
   this.calculate = function(str) {
-    let arr = str.split(" "); // ["1", "+", "2"]
-    return (arr[1] == "+") ? (+arr[0] + +arr[2]) : (+arr[0] - +arr[2]);
+    this.arr = str.split(" ");
+    return this.operations[this.arr[1]](+this.arr[0], +this.arr[2]);
+  }
+
+  this.addMethod = function(operator, calculation) {
+    this.operations[operator] = calculation;
   }
 }
-
-let calc = new Calculator;
-
-console.log( calc.calculate("3 - 7") );
