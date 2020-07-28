@@ -1,0 +1,69 @@
+
+--Map is just like an object (collection of key value pairs) except that in map, keys can be a number, boolean, string while keys in objects are only strings.
+
+--let map = new Map() creates a new map
+
+--map.set(key, value) stores the given key-value pair
+
+--map.get(key) returns the value of the key, undefined if key does not exist
+
+--map.has(key) returns true if the map has a key, false if it doesn't
+
+--map.delete(key) removes the key and its value
+
+--map.clear() deletes everything from the map
+
+--map.size returns the length of map (number of keys)
+
+--maps can also use objects as keys
+
+--map.set can be used multiple times to add key-vaue pairs to the same map...like this => 
+
+map.set("1", "str1")
+   .set(1, "num1")
+   .set(true, "bool1");
+
+
+--for looping over maps, there are 3 methods :
+
+map.keys() - loops over all the keys
+map.values() - loops over all the values
+map.entries() - loops over all the key value pairs, works the same as a for...of loop over a map
+
+--Map also has a built in forEach method just like that of arrays
+
+--Map can also be given values by passing an ARRAY CONTAINING ARRAYS OF KEY-VALUE PAIRS at the time of initialisation, like :
+
+let map = new Map([
+[1, "One"],
+[2, "Two"],
+[3, "Three"]
+]);
+
+--If we need to create a map from an object, we can use Object.entries(obj) to create ARRAY CONTAINING ARRAYS OF KEY-VALUE PAIRS which can then be used to create map as below:
+
+let map = new Map(Object.entries(obj));
+
+--Object.fromEntries creates an object from a given array of key-value pairs.
+
+--Object.fromEntries(map) returns an object from a map
+
+--Set is a collection of only values, where each value appears only once
+
+--let set = new Set(iterable); creates a set and adds the value of the iterable object, usually an array, to it
+
+--set.add(value) adds a value to the set & returns the set
+
+--set.delete(value) removes a value from the set and returns true, returns false if the value didn't exist
+
+--set.has(value) returns true or false depending on whether the value exists in our set or not
+
+--set.clear() remove all values from the set
+
+--set.size returns the length of the set
+
+--iterations like for..of and forEach are supported
+
+--set.keys(), set.values() and set.entries also exist but return the same thing, values only, as set has no keys
+
+
