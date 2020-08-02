@@ -1,0 +1,101 @@
+let date = new Date();
+
+console.log(date);
+
+
+let date = new Date(0);
+
+represents 0 miliseconds (1/1000 second) from 1st January, 1970
+
+
+
+let date = new Date(1000);
+
+represents 1000 miliseconds (1 second) from 1st January, 1970
+
+
+
+let date = new Date(60 * 1000);
+
+represents 60 seconds or 1 minute from 1st January, 1970
+
+
+
+let date = new Date(60 * 60 * 1000);
+
+represents 60 minutes or 1 hour from 1st January, 1970
+
+
+
+
+Hence, let date = new Date(24 * 3600 * 1000);
+
+represents 1 day (24 hours) from 1st January, 1970  i.e.,  2nd January, 1970
+
+
+that is why the syntax is new Date(miliseconds)
+
+the integer part in miliseconds is called a TIME STAMP.
+
+
+
+methods of Date object are:
+
+
+getFullYear() - gets year in four digits
+
+getMonth() - gets month from 0 to 11
+
+getDate() - gets day of the month, 1 to 31
+
+getHours(), getMinutes(), getSeconds(), getMilliseconds() - gets what is being asked for
+
+getDay() - gets the day of the week
+
+getTime() - returns timestamp (number of milliseconds passed from 1st January, 1970)
+
+getTimezoneOffset() - returns difference from UTC to Local Time Zone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
