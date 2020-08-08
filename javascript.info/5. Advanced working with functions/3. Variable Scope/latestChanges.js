@@ -1,9 +1,9 @@
 let name = "John";
 
 function sayHi() {
-  alert("Hi, " + name);
+  console.log("Hi, " + name);
 }
 
 name = "Pete";
 
-sayHi();
+sayHi(); // By the time function gets called, value of name variable has been changed
