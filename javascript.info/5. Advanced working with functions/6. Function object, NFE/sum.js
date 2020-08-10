@@ -1,13 +1,17 @@
-let sum = function func(value) {
-  sum.totalOfValues += value;
-  if (sum.length) {
-    return sum.totalOfValues;
-  }
-  else {
+function sum(value) {
+  let currentSum = value;
+  
+  function func(b) {
+    currentSum += b;
     return func;
   }
+
+  func.toString = function() {
+    return currentSum;
+  };
+
+  return func;
 }
 
-sum.totalOfValues = 0;
-
-console.log(sum(1)(2));
+console.log(sum(1)(2) == 3);
+console.log(sum(5)(-1)(2) == 6);
