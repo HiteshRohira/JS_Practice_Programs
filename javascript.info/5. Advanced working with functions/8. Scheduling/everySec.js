@@ -9,8 +9,6 @@ function printNumbers(from, to) {
 }
 
 
-// setInterval(printNumbers, 1000);
-
 // function printNumbers(from, to) {
 //   console.log(from++);
 //   if (from <= to) {
