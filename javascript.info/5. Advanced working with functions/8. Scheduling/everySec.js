@@ -1,25 +1,22 @@
-let i = 1;
-
-setInterval(function printNumbers(from, to) {
-  if (from <= to) {
-    console.log(i++);
-    from = i;
-  }
-}, 1000, i, 5);
-
-
-
+function printNumbers(from, to) {
+  let  timerId = setInterval ( function go() {
+    console.log(from);
+    if (from == to) {
+      clearInterval(timerId);
+    }
+    from++;
+  }, 1000);
+}
 
 
-
+// setInterval(printNumbers, 1000);
 
 // function printNumbers(from, to) {
+//   console.log(from++);
 //   if (from <= to) {
-//     console.log(from++);
 //     setTimeout(printNumbers, 1000, from, to);
 //   }
 // }
 
 
-
-// printNumbers(0, 5);
+printNumbers(0, 5);
