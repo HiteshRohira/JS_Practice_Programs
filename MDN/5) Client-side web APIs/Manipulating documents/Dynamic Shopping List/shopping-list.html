@@ -34,11 +34,11 @@
       let input = document.querySelector("input");
       let addButton = document.querySelector("button");
 
-      function addItem() {
-        // console.log("click")
+      addButton.onclick = function () {
+        
         let itemName = input.value;
-        // console.log(itemName);
-        input.value = "";
+        
+        // input.value = "";
         
         let listItem = document.createElement("li");
         let span = document.createElement("span");
@@ -51,11 +51,15 @@
         deleteButton.textContent = "X";
 
         list.appendChild(listItem);
-        // console.log(listItem);
-        deleteButton.addEventListener("click", listItem.remove());
+        
+        // deleteButton.addEventListener("click", () => listItem.remove());
+
+        deleteButton.onclick = function() {
+          listItem.remove();
+        }
       }
 
-      addButton.addEventListener("click", () => addItem());
+      // addButton.addEventListener("click", () => addItem());
 
       input.focus();
     </script>
