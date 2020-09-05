@@ -17,8 +17,8 @@
 
 // GET ELEMENT BY ID
 // console.log(document.getElementById("header-title"));
-let headerTitle = document.getElementById("header-title");
-let header = document.getElementById("main-header");
+// let headerTitle = document.getElementById("header-title");
+// let header = document.getElementById("main-header");
 // console.log(headerTitle);
 // headerTitle.textContent = "Hello";
 // headerTitle.innerHTML = "Goodbye";
@@ -41,16 +41,48 @@ let header = document.getElementById("main-header");
 // }
 
 // GET ELEMENTS BY TAGNAME
-let li = document.getElementsByTagName("li");
-console.log(li);
-console.log(li[1]);
-li[1].textContent = "Hello 2";
-li[1].style.fontWeight = "bold";
-li[1].style.backgroundColor = "yellow";
+// let li = document.getElementsByTagName("li");
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = "Hello 2";
+// li[1].style.fontWeight = "bold";
+// li[1].style.backgroundColor = "yellow";
 
-// items.style.backgroundColor = "#f4f4f4";
+// // items.style.backgroundColor = "#f4f4f4";
 
-for(let item of li) {
-  item.style.backgroundColor = "#f4f4f4";
+// for(let item of li) {
+//   item.style.backgroundColor = "#f4f4f4";
+// }
+
+// QUERY SELECTOR
+// let header = document.querySelector("#main-header");
+// header.style.borderBottom = "solid 4px #ccc";
+
+// let input = document.querySelector("input");
+// input.value = "Hello World";
+
+// let submit = document.querySelector("input[type='submit']");
+// submit.value = "SEND";
+
+// let item = document.querySelector(".list-group-item");
+// item.style.color = "blue";
+
+// let lastItem = document.querySelector(".list-group-item:last-child");
+// lastItem.style.color = 'green';
+
+// let secondItem = document.querySelector(".list-group-item:nth-child(2)");
+// secondItem.style.color = '#edff26';
+
+// QUERY SELECTOR
+let titles = document.querySelectorAll(".title");
+
+console.log(titles);
+titles[1].textContent = "Hello";
+
+let odd = document.querySelectorAll("li:nth-child(odd)");
+let even = document.querySelectorAll("li:nth-child(even)");
+
+for (let i = 0; i < odd.length; i++) {
+  odd[i].style.backgroundColor = "#f4f4f4";
+  even[i].style.backgroundColor = "#ccc";
 }
-
