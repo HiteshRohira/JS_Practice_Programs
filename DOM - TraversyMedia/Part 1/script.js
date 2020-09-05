@@ -27,3 +27,15 @@ let header = document.getElementById("main-header");
 // header.style.borderBottom = "solid 4px black";
 
 // GET ELEMENTS BY CLASSNAME
+let items = document.getElementsByClassName("list-group-item");
+console.log(items);
+console.log(items[1]);
+items[1].textContent = "Hello 2";
+items[1].style.fontWeight = "bold";
+items[1].style.backgroundColor = "yellow";
+
+// items.style.backgroundColor = "#f4f4f4";
+
+for(let item of items) {
+  item.style.backgroundColor = "#f4f4f4";
+}
