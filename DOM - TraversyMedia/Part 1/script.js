@@ -134,3 +134,25 @@ let itemList = document.querySelector("#items");
 // console.log(itemList.previousElementSibling);
 // itemList.previousElementSibling.style.backgroundColor = "red";
 
+// createElement
+
+// Create a div
+let newDiv = document.createElement("div");
+
+// Add class
+newDiv.className = "hello";
+
+// Add id
+newDiv.id = "hello1";
+
+// Add attr
+newDiv.setAttribute("title", "Hello Div");
+
+// create text node
+let newDivText = document.createTextNode("Zingat");
+
+// add text to div
+newDiv.appendChild(newDivText);
+
+console.log(newDiv);
+
