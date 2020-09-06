@@ -137,28 +137,41 @@ let itemList = document.querySelector("#items");
 // createElement
 
 // Create a div
-let newDiv = document.createElement("div");
+// let newDiv = document.createElement("div");
 
-// Add class
-newDiv.className = "hello";
+// // Add class
+// newDiv.className = "hello";
 
-// Add id
-newDiv.id = "hello1";
+// // Add id
+// newDiv.id = "hello1";
 
-// Add attr
-newDiv.setAttribute("title", "Hello Div");
+// // Add attr
+// newDiv.setAttribute("title", "Hello Div");
 
-// create text node
-let newDivText = document.createTextNode("Zingat");
+// // create text node
+// let newDivText = document.createTextNode("Zingat");
 
-// add text to div
-newDiv.appendChild(newDivText);
+// // add text to div
+// newDiv.appendChild(newDivText);
 
-let container = document.querySelector("header .container");
-let h1 = document.querySelector("header h1");
+// let container = document.querySelector("header .container");
+// let h1 = document.querySelector("header h1");
 
-console.log(newDiv);
+// console.log(newDiv);
 
-newDiv.style.fontSize = "30px";
+// newDiv.style.fontSize = "30px";
 
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
+
+let button = document.querySelector("#button").addEventListener("click", buttonClick);
+
+function buttonClick(e) {
+  // console.log("Button clicked");
+  // document.querySelector("#header-title").textContent = "Changed";
+  // document.querySelector("#main").style.backgroundColor = "#ccc";
+  // console.log(e);
+
+  console.log(e.target);
+  console.log(e.target.id);
+  console.log(e.target.className);
+}
