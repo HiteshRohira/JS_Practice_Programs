@@ -74,15 +74,63 @@
 // secondItem.style.color = '#edff26';
 
 // QUERY SELECTOR
-let titles = document.querySelectorAll(".title");
+// let titles = document.querySelectorAll(".title");
 
-console.log(titles);
-titles[1].textContent = "Hello";
+// console.log(titles);
+// titles[1].textContent = "Hello";
 
-let odd = document.querySelectorAll("li:nth-child(odd)");
-let even = document.querySelectorAll("li:nth-child(even)");
+// let odd = document.querySelectorAll("li:nth-child(odd)");
+// let even = document.querySelectorAll("li:nth-child(even)");
 
-for (let i = 0; i < odd.length; i++) {
-  odd[i].style.backgroundColor = "#f4f4f4";
-  even[i].style.backgroundColor = "#ccc";
-}
+// for (let i = 0; i < odd.length; i++) {
+//   odd[i].style.backgroundColor = "#f4f4f4";
+//   even[i].style.backgroundColor = "#ccc";
+// }
+
+
+// TRAVERSING THE DOM
+let itemList = document.querySelector("#items");
+// parentNode
+// console.log(itemList.parentNode);
+// itemList.parentNode.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+// parentElement
+// console.log(itemList.parentElement);
+// itemList.parentElement.style.backgroundColor = "#f4f4f4";
+// console.log(itemList.parentElement.parentElement.parentElement);
+
+// childNodes
+// console.log(itemList.childNodes);
+
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+// itemList.children[1].style.backgroundColor = "yellow";
+
+// firstChild
+// console.log(itemList.firstChild); // actually gives text
+
+// firstElementChild
+// console.log(itemList.firstElementChild);
+// itemList.firstElementChild.textContent = "matrix";
+
+// lastChild
+// console.log(itemList.lastChild); // actually gives text
+
+// lastElementChild
+// console.log(itemList.lastElementChild);
+// itemList.lastElementChild.textContent = "matrix";
+
+// nextSibling
+// console.log(itemList.nextSibling);
+
+// nextElementSibling
+// console.log(itemList.nextElementSibling);
+
+// previousSibling
+// console.log(itemList.previousSibling);
+
+// previousElementSibling
+// console.log(itemList.previousElementSibling);
+// itemList.previousElementSibling.style.backgroundColor = "red";
+
