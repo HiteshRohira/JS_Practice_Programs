@@ -163,6 +163,8 @@ let itemList = document.querySelector("#items");
 
 // container.insertBefore(newDiv, h1);
 
+// EVENTS
+
 let button = document.querySelector("#button").addEventListener("click", buttonClick);
 
 function buttonClick(e) {
@@ -171,7 +173,24 @@ function buttonClick(e) {
   // document.querySelector("#main").style.backgroundColor = "#ccc";
   // console.log(e);
 
-  console.log(e.target);
-  console.log(e.target.id);
-  console.log(e.target.className);
+  // console.log(e.target);
+  // console.log(e.target.id);
+  // console.log(e.target.className);
+  // console.log(e.target.classList);
+  // let output = document.querySelector("#output");
+  // output.innerHTML = "<h3>" + e.target.id + "</h3>";
+
+  // console.log(e.type);
+
+  // console.log(e.clientX); //from left to right
+  // console.log(e.clientY); // from top to bottom
+
+  // console.log(e.offsetX);
+  // console.log(e.offsetY);
+
+  // console.log(e.altKey);
+  // console.log(e.ctrlKey);
+  // console.log(e.shiftKey);
+
+
 }
