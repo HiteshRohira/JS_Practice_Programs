@@ -89,7 +89,7 @@
 
 
 // TRAVERSING THE DOM
-let itemList = document.querySelector("#items");
+// let itemList = document.querySelector("#items");
 // parentNode
 // console.log(itemList.parentNode);
 // itemList.parentNode.style.backgroundColor = "#f4f4f4";
@@ -165,32 +165,42 @@ let itemList = document.querySelector("#items");
 
 // EVENTS
 
-let button = document.querySelector("#button").addEventListener("click", buttonClick);
+// let button = document.querySelector("#button").addEventListener("click", buttonClick);
 
-function buttonClick(e) {
-  // console.log("Button clicked");
-  // document.querySelector("#header-title").textContent = "Changed";
-  // document.querySelector("#main").style.backgroundColor = "#ccc";
-  // console.log(e);
+// function buttonClick(e) {
+//   // console.log("Button clicked");
+//   // document.querySelector("#header-title").textContent = "Changed";
+//   // document.querySelector("#main").style.backgroundColor = "#ccc";
+//   // console.log(e);
 
-  // console.log(e.target);
-  // console.log(e.target.id);
-  // console.log(e.target.className);
-  // console.log(e.target.classList);
-  // let output = document.querySelector("#output");
-  // output.innerHTML = "<h3>" + e.target.id + "</h3>";
+//   // console.log(e.target);
+//   // console.log(e.target.id);
+//   // console.log(e.target.className);
+//   // console.log(e.target.classList);
+//   // let output = document.querySelector("#output");
+//   // output.innerHTML = "<h3>" + e.target.id + "</h3>";
 
-  // console.log(e.type);
+//   // console.log(e.type);
 
-  // console.log(e.clientX); //from left to right
-  // console.log(e.clientY); // from top to bottom
+//   // console.log(e.clientX); //from left to right
+//   // console.log(e.clientY); // from top to bottom
 
-  // console.log(e.offsetX);
-  // console.log(e.offsetY);
+//   // console.log(e.offsetX);
+//   // console.log(e.offsetY);
 
-  // console.log(e.altKey);
-  // console.log(e.ctrlKey);
-  // console.log(e.shiftKey);
+//   // console.log(e.altKey);
+//   // console.log(e.ctrlKey);
+//   // console.log(e.shiftKey);
+// }
+
+let button = document.querySelector("#button");
+
+// button.addEventListener("click", runEvent);
+// button.addEventListener("dblclick", runEvent);
+// button.addEventListener("mousedown", runEvent);
+// button.addEventListener("mouseup", runEvent);
 
 
+function runEvent(e) {
+  console.log("EVENT TYPE: "+e.type);
 }
