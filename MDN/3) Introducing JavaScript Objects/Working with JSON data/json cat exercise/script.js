@@ -22,6 +22,15 @@ function displayCatInfo(catString) {
 		} else {
 			motherInfo += `${catObj[i]["name"]}, `;
 		}
+
+		for (let kitten in catObj[i]["kittens"]) {
+			total++;
+			if (kitten["gender"] === "m") {
+				male++;
+			}
+		}
+
+		kittenInfo = `Total: ${total}, Male: ${male}, Female: ${total - male}`;
 	}
 
 
