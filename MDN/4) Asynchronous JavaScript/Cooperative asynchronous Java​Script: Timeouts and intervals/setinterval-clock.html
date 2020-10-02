@@ -6,6 +6,10 @@
     <style>
       p {
         font-family: sans-serif;
+				font-size: 1.5rem;
+				font-weight: 800;
+				display: block;
+				margin: 20px 13px;
       }
     </style>
   </head>
@@ -21,13 +25,19 @@
 			let para = document.querySelector(".clock");
 
 			let secondCounter = 0;
-			para.textContent = "00 : 00 : 00";
+			para.textContent = "00 : 00 : 00 : 000";
 			let secondCounterLoop, time;
 			let minuteCounter = 0;
 			let hourCounter = 0;
+			let miliSecCounter = 0;
 
 			function displayTime() {
-				secondCounter++;
+				// secondCounter++;
+				miliSecCounter++;
+				if (miliSecCounter > 999) {
+					miliSecCounter = 0;
+					secondCounter++;
+				}
 				if (secondCounter > 59) {
 					minuteCounter++;
 					secondCounter = 0;
@@ -43,13 +53,13 @@
 					(minuteCounter > 9) ? minuteCounter : (`0${minuteCounter}`)
 				} : ${
 					(secondCounter > 9) ? secondCounter : (`0${secondCounter}`)
-				}`;
+				} : ${miliSecCounter}`;
 
 				para.textContent = time;
 			}
 
 			startBtn.addEventListener("click", () => {
-				secondCounterLoop = setInterval(displayTime, 1000);
+				secondCounterLoop = setInterval(displayTime, 1);
 			});
 
 			stopBtn.addEventListener("click", () => {
@@ -60,8 +70,9 @@
 				secondCounter = 0;
 				minuteCounter = 0;
 				hourCounter = 0;
+				miliSecCounter = 0;
 				clearInterval(secondCounterLoop);
-				para.textContent = "00 : 00 : 00";
+				para.textContent = "00 : 00 : 00 : 000";
 			});
 
     </script>
