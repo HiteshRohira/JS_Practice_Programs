@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple setInterval clock</title>
+    <style>
+      p {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+		<p class="clock"></p>
+		<button class="start">Start</button>
+		<button class="stop">Stop</button>
+		<button class="reset">Reset</button>
+    <script>
+			let startBtn = document.querySelector(".start");
+			let stopBtn = document.querySelector(".stop");
+			let resetBtn = document.querySelector(".reset");
+			let para = document.querySelector(".clock");
+
+			let secondCounter = 0;
+			para.textContent = "00 : 00 : 00";
+			let secondCounterLoop, time;
+			let minuteCounter = 0;
+			let hourCounter = 0;
+
+			function displayTime() {
+				secondCounter++;
+				if (secondCounter > 59) {
+					minuteCounter++;
+					secondCounter = 0;
+				}
+				if (minuteCounter > 59) {
+					hourCounter++;
+					minuteCounter = 0;
+				}
+				
+				time = `${
+					(hourCounter > 9) ? hourCounter : (`0${hourCounter}`)
+				} : ${
+					(minuteCounter > 9) ? minuteCounter : (`0${minuteCounter}`)
+				} : ${
+					(secondCounter > 9) ? secondCounter : (`0${secondCounter}`)
+				}`;
+
+				para.textContent = time;
+			}
+
+			startBtn.addEventListener("click", () => {
+				secondCounterLoop = setInterval(displayTime, 1000);
+			});
+
+			stopBtn.addEventListener("click", () => {
+				clearInterval(secondCounterLoop);
+			});
+
+			resetBtn.addEventListener("click", () => {
+				secondCounter = 0;
+				minuteCounter = 0;
+				hourCounter = 0;
+				clearInterval(secondCounterLoop);
+				para.textContent = "00 : 00 : 00";
+			});
+
+    </script>
+  </body>
+</html>
