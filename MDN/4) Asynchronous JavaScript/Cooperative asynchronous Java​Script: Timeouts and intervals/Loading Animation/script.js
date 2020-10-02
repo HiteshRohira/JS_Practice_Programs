@@ -14,7 +14,7 @@ function draw(timestamp) {
 		rotateCount %= 360;
 	}
 
-	spinner.style.transform = 'rotate(' + rotateCount + 'deg)';
+	spinner.style.transform = `rotate(${rotateCount}deg)`;
 
 	rAF = requestAnimationFrame(draw);
 }
