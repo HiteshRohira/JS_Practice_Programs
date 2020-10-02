@@ -58,6 +58,10 @@ let startTime;
 let start = true;
 let breakLoop;
 
+// stopBtn.addEventListener("click", () => {
+// 	breakLoop = true;
+// });
+
 function displayTime() {
 	console.log("clicked " + start);
 	startTime = Date.now();
@@ -65,6 +69,9 @@ function displayTime() {
 		time = Date.now() - startTime;
 		para.textContent = time;
 		console.log(time);
+		stopBtn.addEventListener("click", () => {
+			breakLoop = true;
+		});
 		if (breakLoop === true) {
 			console.log("stop btn clicked");
 			break;
@@ -74,9 +81,9 @@ function displayTime() {
 
 startBtn.addEventListener("click", displayTime);
 
-stopBtn.addEventListener("click", () => {
-	breakLoop = true;
-});
+// stopBtn.addEventListener("click", () => {
+// 	breakLoop = true;
+// });
 
 resetBtn.addEventListener("click", () => {
 	start = false;
