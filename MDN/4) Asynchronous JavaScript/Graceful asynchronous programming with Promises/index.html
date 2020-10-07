@@ -25,6 +25,10 @@
 		// 	document.body.appendChild(image);
 		// });
 
+		// let errorCase = promise3.catch(e => {
+		// 	console.log("There has been a problem with your fetch operation: " + e.message);
+		// });
+
 		fetch('coffee.jpg')
 		.then(response => {
 			if(!response.ok) {
@@ -39,5 +43,8 @@
 			image.src = objectURL;
 			document.body.appendChild(image);
 		})
+		.catch(e => {
+			console.log("There has been a problem with your fetch operation: " + e.message);
+		});
 	</script>
 </html>
