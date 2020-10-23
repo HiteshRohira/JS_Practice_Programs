@@ -4,13 +4,13 @@ import AlertContext from "./alertContext";
 import alertReducer from "./alertReducer";
 import { SET_ALERT, REMOVE_ALERT } from "../types";
 
-const AuthState = (props) => {
+const AlertState = (props) => {
 	const initialState = [];
 
 	const [state, dispatch] = useReducer(alertReducer, initialState);
 
 	// Set Alert
-	const setAlert = (msg, type, timeout = 4000) => {
+	const setAlert = (msg, type, timeout = 6000) => {
 		const id = uuid.v4;
 		dispatch({
 			type: SET_ALERT,
