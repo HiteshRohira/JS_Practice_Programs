@@ -8,11 +8,11 @@
       "id": 1
     },
     {
-      "message": "Hard drive failed in workstation 002",
-      "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2020-10-27T08:18:50.773Z",
-      "id": 2
+      "id": 2,
+      "message": "Fixed hard drive in workstation 002",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2020-10-27T12:19:00.388Z"
     },
     {
       "message": "1122 wireless down",
