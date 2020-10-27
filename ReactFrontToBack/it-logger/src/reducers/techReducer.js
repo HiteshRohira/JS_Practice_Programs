@@ -1,3 +1,5 @@
+import { GET_TECHS, SET_LOADING } from "../actions/types";
+
 /* eslint-disable import/no-anonymous-default-export */
 const initialState = {
 	techs: null,
@@ -7,6 +9,17 @@ const initialState = {
 
 export default (state = initialState, action) => {
 	switch (action.type) {
+		case GET_TECHS:
+			return {
+				...state,
+				techs: action.payload,
+				loading: false,
+			};
+		case SET_LOADING:
+			return {
+				...state,
+				loading: true,
+			};
 		default:
 			return state;
 	}
